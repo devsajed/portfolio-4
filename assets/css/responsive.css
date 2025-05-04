@@ -62,9 +62,8 @@
   }
   .col-md-12 {
     width: 100%;
+    text-align: center;
   }
-  
-  
 }
 
 @media (max-width: 576px) {
@@ -72,22 +71,24 @@
     width: 100%;
     margin: 10px 0;
   }
-  
+  .logo{
+    width: 100%;
+    text-align: center;
+  }
+  .main-menu ul {
+    display: block;
+  }
 }
 
 /* Additional Media Queries for Responsiveness */
 @media (max-width: 1200px) {
-  
 }
 
 @media (max-width: 992px) {
-  
 }
 
 @media (max-width: 768px) {
-  
 }
 
 @media (max-width: 576px) {
-  
 }
