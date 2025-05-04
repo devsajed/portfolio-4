@@ -1,0 +1,401 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;700&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem; /* Responsive typography */
+  line-height: 1.6;
+  font-weight: 400;
+  background-color: var(--gray);
+  /* color: var(--white-color); */
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+
+/* Color Variables */
+:root {
+  --dark-gray: #1f1d1c;
+  --white-color: #fff;
+  --smoky-black: #160c00;
+  --dark-orange: #ab5d00;
+  --gray: #f4f4f4;
+  --dark-opacity: rgba(39, 26, 11, 0.5);
+  --primary-spacing: 10px;
+  --secondary-spacing: 30px;
+  --large-spacing: 50px;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Responsive Grid System */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+[class*="col-"] {
+  padding: 0 15px;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+/* Responsive Columns */
+@media (max-width: 992px) {
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .col-md-12 {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+/* Flexbox Utilities */
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-start {
+  align-items: flex-start;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+/* Background Cover */
+.cover {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Position Utilities */
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.top-0 {
+  top: 0;
+}
+.bottom-0 {
+  bottom: 0;
+}
+
+/* Spacing Utilities (Using Variables) */
+.pt-small {
+  padding-top: var(--primary-spacing);
+}
+.pt-medium {
+  padding-top: var(--secondary-spacing);
+}
+.pt-large {
+  padding-top: var(--large-spacing);
+}
+
+.pb-small {
+  padding-bottom: var(--primary-spacing);
+}
+.pb-medium {
+  padding-bottom: var(--secondary-spacing);
+}
+.pb-large {
+  padding-bottom: var(--large-spacing);
+}
+
+.mt-small {
+  margin-top: var(--primary-spacing);
+}
+.mt-medium {
+  margin-top: var(--secondary-spacing);
+}
+.mt-large {
+  margin-top: var(--large-spacing);
+}
+
+.mb-small {
+  margin-bottom: var(--primary-spacing);
+}
+.mb-medium {
+  margin-bottom: var(--secondary-spacing);
+}
+.mb-large {
+  margin-bottom: var(--large-spacing);
+}
+
+/* Typography Utilities */
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-white {
+  color: var(--white-color);
+}
+.text-dark-gray {
+  color: var(--dark-gray);
+}
+.text-regular {
+  font-weight: 400;
+}
+.text-medium {
+  font-weight: 500;
+}
+.text-bold {
+  font-weight: 700;
+}
+
+/* Common Css  */
+
+/* Header css  */
+
+.header-area {
+  padding: 20px 0;
+  background: #ecf0f1;
+  position: sticky;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  opacity: 0.7;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+}
+.logo {
+  display: inline-block;
+  font-size: 30px;
+  color: #e67e22;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+.logo span {
+  display: inline-block;
+  color: #e74c3c;
+}
+
+.main-menu ul li {
+  margin-left: 21px;
+}
+.main-menu ul li a {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 500;
+  color: tomato;
+  border-bottom: 1px solid transparent;
+}
+.main-menu ul li a:hover {
+  color: #e67e22;
+  border-bottom: 1px solid #e67e22;
+}
+
+/* hero area  */
+
+.hero-area {
+  padding: 100px 0;
+}
+
+.hero-content {
+  padding: 80px 0;
+}
+.hero-content h1 {
+  font-size: 49px;
+  line-height: 65px;
+  font-weight: 700;
+}
+.hero-content p {
+  font-size: 21px;
+  line-height: 33px;
+  margin: 26px 0;
+}
+.btn.btn-primary {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  background: tomato;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+.btn.btn-primary:hover {
+  background: none;
+  border: 1px solid tomato;
+  color: tomato;
+}
+
+/* Services  */
+.services-area h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #d4d;
+}
+.services-area p {
+  margin-bottom: 60px;
+}
+
+.services-area h2,
+.portfolio-area h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: tomato;
+}
+
+.services-area p,
+.portfolio-area p {
+  margin-bottom: 60px;
+}
+.service-item {
+  background: #e2e8ea;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.1) 0px 30px 60px -30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.service-item .icon {
+  font-size: 35px;
+  background: #ff6347;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.service-item h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+/* portfolio  */
+/* Portfolio Section Styles */
+.portfolio-area {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.portfolio-area .img-fluid {
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.portfolio-area .img-fluid:hover,
+.service-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
